@@ -1,0 +1,32 @@
+name:                servant-basics-talk
+version:             0.1.0.0
+#synopsis:
+#description:
+homepage:            https://github.com/jvanbruegge/servant-basics-talk#readme
+license:             BSD3
+author:              Jan van Brügge
+maintainer:          supermanitu@gmail.com
+copyright:           2018 Jan van Brügge
+category:            Web
+extra-source-files:
+- README.md
+
+dependencies:
+  - base >= 4.7 && < 5
+  - servant
+  - servant-server
+  - wai
+  - warp
+  - aeson
+  - bytestring
+
+default-extensions:
+    - TypeSynonymInstances
+    - FlexibleInstances
+    - KindSignatures
+    - DeriveAnyClass
+
+executables:
+  servant-basics-talk:
+    source-dirs:      src
+    main:             Main.hs

@@ -1,0 +1,45 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.1.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 63f5754dc4a5f0c638ce530858d8a10e5720a9db884fb04fe47ef3fa6eaba218
+
+name:           servant-basics-talk
+version:        0.1.0.0
+category:       Web
+homepage:       https://github.com/jvanbruegge/servant-basics-talk#readme
+author:         Jan van Brügge
+maintainer:     supermanitu@gmail.com
+copyright:      2018 Jan van Brügge
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+executable servant-basics-talk
+  main-is: Main.hs
+  other-modules:
+      Slide1
+      Slide2
+      Slide3
+      Slide4
+      Slide5
+      Slide6
+      Slide7
+      Slide8
+      Paths_servant_basics_talk
+  hs-source-dirs:
+      src
+  default-extensions: TypeSynonymInstances FlexibleInstances KindSignatures DeriveAnyClass
+  build-depends:
+      aeson
+    , base >=4.7 && <5
+    , bytestring
+    , servant
+    , servant-server
+    , wai
+    , warp
+  default-language: Haskell2010
